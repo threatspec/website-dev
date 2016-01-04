@@ -1,0 +1,147 @@
+.centered {
+  text-align: center;
+}
+
+.heading {
+  min-height: 35em;
+  background-color: #8e44ad;
+  color: #ecf0f1;
+  margin-bottom: 3em;
+}
+.heading .logo {
+  margin-top: 6em;
+}
+.heading h1 {
+  font-size: 8em;
+}
+.heading h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.step {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.step .inside {
+  color: #ecf0f1;
+  background-color: #8e44ad;
+  padding: 1em;
+  min-height: 25em;
+}
+
+.step h3 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.step p {
+  font-size: 1.5em;
+}
+
+.downloads h3 {
+  color: #8e44ad;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 5em;
+}
+
+.tools {
+  font-size: 2em;
+}
+.tools a {
+  color: #383838;
+  text-decoration: underline;
+}
+
+.demo {
+  margin-top: 3em;
+  color: #ecf0f1;
+  background-color: #8e44ad;
+}
+
+.demo h3 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 5em;
+}
+
+.demo p {
+  font-size: 2em;
+}
+
+.demo h4 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+
+.demo ul {
+  font-size: 1.5em;
+  font-family: monospace;
+  margin-bottom: 2em;
+  list-style-type: none;
+  line-height: 1.8em;
+}
+
+.demo-menu {
+  margin-top: 1em;
+}
+
+#editor {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 800px;
+}
+
+.report {
+  height: 800px;
+  overflow-y: scroll
+}
+
+.separator {
+  border-left: solid #ddd;
+  border-width: 1px;
+}
+
+.about {
+  color: #ecf0f1;
+  background-color: #8e44ad;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.about h3 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.about p {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.about ul {
+  font-size: 2em;
+}
+
+
+.footer {
+  text-align: center;
+  font-size: 2em;
+}
+
+.footer p.credits {
+  font-size: 0.8em;
+  color: #888;
+}
+
