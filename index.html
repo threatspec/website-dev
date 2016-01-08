@@ -22,13 +22,23 @@
   </head>
   <body>
 
-    <div class="container-fluid">
-
-      <div class="row" id="header">
-        <div class="col-md-12">
-          <h1>ThreatSpec : Code-driven threat modelling</h1>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">ThreatSpec : Code-driven threat modelling</a>
         </div>
+        <div id="navbar" class="collapse navbar-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#demo">Demo editor</a></li>
+            <li><a href="#docs">Demo usage</a></li>
+            <li><a href="#usage">ThreatSpec usage</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
+    </nav>
+
+    <div class="container-fluid">
 
       <div class="row" id="demo">
         <div class="col-md-6">
@@ -199,7 +209,7 @@ class Story {
       <div class="row" id="about">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <h2>About ThreatSpec</h2>
+          <h3>About ThreatSpec</h3>
           <p>ThreatSpec aims to close the gap between development and security by bringing the threat modelling process further into the development process. This is achieved by having developers and security engineers write threat specifications alongside code, then dynamically generating reports and data-flow diagrams from the code.</p>
           <p>Security testing is shifting left, from annual pentests to the realm of unit testing and test-driven development, by taking advantage of automation and agile practices. ThreatSpec is an attempt to continue the evolution. The aim of this site is to share the idea, bring together resources and get a discussion going.</p>
           <p>For a fully comprehensive introduction to threat modelling, check out the book <a href="">Threat Modeling: Designing for Security</a> by Adam Shostack.</p>
