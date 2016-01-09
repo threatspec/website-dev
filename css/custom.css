@@ -3,23 +3,24 @@
 }
 
 /***********************************************
- * Body
- **********************************************/
-
-/***********************************************
  * Demo
  **********************************************/
 
 #demo {
   padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+#editor-actions {
+  margin-bottom: 1em;
 }
 
 #editor {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 800px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 800px; 
 }
 
 #report {
@@ -27,7 +28,7 @@
 }
 
 .report {
-  height: 800px;
+  height: 800px; 
   overflow-y: scroll
 }
 
@@ -44,6 +45,7 @@
   color: #ecf0f1;
   background-color: #8e44ad;
   padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 #docs h3 {
@@ -142,6 +144,10 @@
  * Downloads
  **********************************************/
 
+#downloads {
+  padding-bottom: 5em;
+}
+
 #downloads h3 {
   color: #8e44ad;
   margin-top: 1em;
@@ -167,6 +173,7 @@
 
 #about {
   padding-top: 5em;
+  padding-bottom: 5em;
   color: #ecf0f1;
   background-color: #8e44ad;
 }
@@ -184,7 +191,6 @@
 
 #about ul {
   font-size: 2em;
-  margin-bottom: 2em;
 }
 
 #about a {
