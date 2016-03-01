@@ -250,6 +250,7 @@
  **********************************************/
 
 @media only screen and (max-device-width: 768px) {
+
   #demo {
     display: none;
   }
@@ -261,18 +262,6 @@
   #docs {
     display: none;
   }
-
-   .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
-
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
-
-
 
   #navbar {
     display: none;
