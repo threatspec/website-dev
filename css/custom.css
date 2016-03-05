@@ -251,6 +251,57 @@
 
 @media only screen and (max-device-width: 768px) {
 
+/*.modal-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}*/
+/*.modal-content {
+    height: auto;
+    border-radius: 0;
+    position: relative;
+}*/
+.modal-body {
+    height: 85vh;
+    position: relative;
+}
+
+  #mobiledemo {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  #mobilereport {
+     overflow: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+   }
+
+  #mobilejson {
+     overflow: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  #editormodal {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+
   #demo {
     display: none;
   }

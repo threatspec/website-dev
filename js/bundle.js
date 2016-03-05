@@ -8,6 +8,7 @@ function parse() {
   var tsData = ts.data()
 
   document.getElementById('json-data').textContent = JSON.stringify(tsData, null, 2)
+  document.getElementById('mobilejson').textContent = JSON.stringify(tsData, null, 2)
 
   var components = {}
   var reportData = {
@@ -206,11 +207,16 @@ function parse() {
 
   var output = mustache.render(template, reportData);
   document.querySelector('#report').innerHTML = output;
+  document.querySelector('#mobilereport').innerHTML = output;
 
 }
 
 var button = document.getElementById('parse');
+var reportbutton = document.getElementById('reportbutton');
+var jsonbutton = document.getElementById('jsonbutton');
 button.addEventListener('click', parse);
+reportbutton.addEventListener('click', parse);
+jsonbutton.addEventListener('click', parse);
 
 parse();
 
@@ -908,6 +914,7 @@ function parseLines(lines) {
 
 function parseSource(src) {
   var parsed = esprima.parse(src, {loc:true, attachComment:true});
+  console.log(JSON.stringify(parsed, null, 2))
 
   var comments = []
   findComments(parsed, comments)

@@ -19,8 +19,85 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/threatspec.css" rel="stylesheet">
 
+    <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="demomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#mobiledemo" aria-controls="mobiledemo" role="tab" data-toggle="tab">Editor</a></li>
+            <li role="presentation"><a href="#mobilereport" aria-controls="profile" role="tab" data-toggle="tab" id="reportbutton">Report</a></li>
+            <li role="presentation"><a href="#mobilejson" aria-controls="messages" role="tab" data-toggle="tab" id="jsonbutton">JSON</a></li>
+          </ul>
+        </div>
+        <div class="modal-body">
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="mobiledemo">
+          <div id="editormodal">/**
+ * ########  ######## ##     ##  #######  
+ * ##     ## ##       ###   ### ##     ## 
+ * ##     ## ##       #### #### ##     ## 
+ * ##     ## ######   ## ### ## ##     ## 
+ * ##     ## ##       ##     ## ##     ## 
+ * ##     ## ##       ##     ## ##     ## 
+ * ########  ######## ##     ##  #######  
+ *
+ * Write or edit JavaScript in this editor and annotate the code with ThreatSpec tags. 
+ *
+ * See below for details.
+ *
+ * @alias threat @cwe_319_cleartext_transmission to cleartext transmission of data
+ * @describe threat @cwe_319_cleartext_transmission as The software transmits sensitive or \
+   security-critical data in cleartext in a communication channel that can be sniffed by \
+   unauthorized actors
+ * 
+ * @alias boundary @webapp to WebApp
+ * @describe boundary @webapp as Customer facing web application
+ *
+ * @alias component @app to App
+ * @describe component @app as Core application
+ */
+
+class Story {
+  /**
+   * Represents a book.
+   * @constructor
+   * @param {string} title - The title of the book.
+   * @param {string} author - The author of the book.
+   * 
+   * @mitigates @webapp:FileSystem against unauthorised access with strict file permissions (#122)
+   * @exposes @webapp:App to XSS injection with insufficient input validation (#124,#133)
+   * @transfers @cwe_319_cleartext_transmission to User:Browser with non-sensitive information (#125)
+   * @accepts arbitrary file writes to @webapp:FileSystem with filename restrictions (#106)
+   */
+
+  Book(title, author) {
+  }
+}</div> <!--/ editor -->
+          <script>
+              var editor_modal = ace.edit("editormodal");
+              editor_modal.setTheme("ace/theme/chrome");
+              editor_modal.getSession().setMode("ace/mode/javascript");
+              //editor_modal.getSession().setUseWrapMode(true);
+              editor_modal.renderer.setShowGutter(false);
+          </script>
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="mobilereport">...</div>
+    <div role="tabpanel" class="tab-pane" id="mobilejson">...</div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -47,6 +124,9 @@
           <img src="images/code.png"/>
           <h3>Into threat models</h3>
           <img src="images/report.png"/>
+          <!-- Button trigger modal -->
+          <br/><br/>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#demomodal">Interactive Demo</button>
         </div>
         <div class="col-md-2"></div>
       </div> <!--/demo-mobile -->
@@ -99,7 +179,6 @@ class Story {
   Book(title, author) {
   }
 }</div> <!--/ editor -->
-          <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
           <script>
               var editor = ace.edit("editor");
               editor.setTheme("ace/theme/chrome");
