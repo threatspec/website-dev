@@ -7,7 +7,6 @@
  **********************************************/
 
 #demo {
-  padding-top: 5em;
   padding-bottom: 2em;
 }
 
@@ -43,7 +42,6 @@
 
 #demo-mobile {
   display: none;
-  padding-top: 5em;
   padding-bottom: 2em;
 }
 
@@ -277,13 +275,21 @@
   }
 
   #mobilereport {
-     overflow: scroll;
+    overflow: scroll;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     position: absolute;
+    padding-left: 1em;
+    font-size: 14px;
    }
+  #mobilereport > * {
+    font-size: 18px;
+  }
+  #mobilereport > * > * > * {
+    font-size: 14px;
+  }
 
   #mobilejson {
      overflow: scroll;
@@ -300,6 +306,16 @@
     bottom: 0;
     left: 0;
     position: absolute;
+  }
+
+  #launchdemo {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  #launchbutton {
+    background-color: #8e44ad;
+    border-color: #7e349d;
   }
 
   #demo {
@@ -320,6 +336,10 @@
 
   .navbar-brand {
     font-size: 1em;
+  }
+
+  #usage {
+    padding-top: 1em;
   }
 
   #usage h3 {

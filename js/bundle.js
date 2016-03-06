@@ -8,7 +8,7 @@ function parse() {
   var tsData = ts.data()
 
   document.getElementById('json-data').textContent = JSON.stringify(tsData, null, 2)
-  document.getElementById('mobilejson').textContent = JSON.stringify(tsData, null, 2)
+  document.getElementById('mobilejson-data').textContent = JSON.stringify(tsData, null, 2)
 
   var components = {}
   var reportData = {
